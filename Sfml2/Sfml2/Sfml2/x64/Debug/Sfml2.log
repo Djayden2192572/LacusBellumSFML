@@ -1,0 +1,10 @@
+﻿  Sfml2.cpp
+C:\Users\brouw\source\repos\Sfml2\Sfml2\Sfml2.cpp(19,31): error C2039: 'optional': is not a member of 'std'
+      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\map(24,1):
+      see declaration of 'std'
+  
+C:\Users\brouw\source\repos\Sfml2\Sfml2\Sfml2.cpp(19,20): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\brouw\source\repos\Sfml2\Sfml2\Sfml2.cpp(19,40): error C2061: syntax error: identifier 'event'
+C:\Users\brouw\source\repos\Sfml2\Sfml2\Sfml2.cpp(20,13): error C2143: syntax error: missing ';' before '{'
+C:\Users\brouw\source\repos\Sfml2\Sfml2\Sfml2.cpp(21,21): error C2065: 'event': undeclared identifier
+C:\Users\brouw\source\repos\Sfml2\Sfml2\Sfml2.cpp(21,50): error C2059: syntax error: ')'
