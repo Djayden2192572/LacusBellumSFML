@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\brouw\\source\\repos\\Sfml2\\",
+  "WorkspaceRootPath": "C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|C:\\Users\\brouw\\source\\repos\\Sfml2\\Sfml2\\Sfml2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\Sfml2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|solutionrelative:Sfml2\\Sfml2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -20,11 +20,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Sfml2.cpp",
-              "DocumentMoniker": "C:\\Users\\brouw\\source\\repos\\Sfml2\\Sfml2\\Sfml2.cpp",
+              "DocumentMoniker": "C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\Sfml2.cpp",
               "RelativeDocumentMoniker": "Sfml2\\Sfml2.cpp",
-              "ToolTip": "C:\\Users\\brouw\\source\\repos\\Sfml2\\Sfml2\\Sfml2.cpp",
+              "ToolTip": "C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\Sfml2.cpp",
               "RelativeToolTip": "Sfml2\\Sfml2.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-09-02T09:12:32.19Z",
               "EditorCaption": ""
