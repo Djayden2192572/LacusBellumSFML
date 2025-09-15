@@ -6,30 +6,31 @@
 #include<SFML/Window.hpp>
 #include<SFML/System.hpp>
 
-int main()
-{
+#include <SFML/Graphics.hpp>
+#include "Sfml2.h"
 
+
+int main() {
     sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
-    sf::CircleShape shape(100.f);
+
+    sf::CircleShape shape(100.f);   // cirkel met straal 100px
     shape.setFillColor(sf::Color::Green);
 
-    while (window.isOpen())
-    {
+    while (window.isOpen()) {
         sf::Event event;
-        while (window.pollEvent(event))
-        {
+        while (window.pollEvent(event)) {
             if (event.type == sf::Event::Closed)
                 window.close();
         }
 
         window.clear();
-        window.draw(shape);
+        window.draw(shape);  // TEKEN de shape
         window.display();
     }
 
     return 0;
-
 }
+
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
