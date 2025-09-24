@@ -5,30 +5,13 @@
 #include <SFML/Graphics.hpp>
 #include<SFML/Window.hpp>
 #include<SFML/System.hpp>
+#include "Renderer.h"
 
 int main()
 {
-
-    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
-
-    while (window.isOpen())
-    {
-        sf::Event event;
-        while (window.pollEvent(event))
-        {
-            if (event.type == sf::Event::Closed)
-                window.close();
-        }
-
-        window.clear();
-        window.draw(shape);
-        window.display();
-    }
-
+    Renderer renderer(800, 800, "SFML works!");
+    renderer.run();
     return 0;
-
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
