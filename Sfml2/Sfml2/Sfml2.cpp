@@ -9,7 +9,7 @@
 
 int main()
 {
-    Renderer renderer(800, 800, "SFML works!");
+    Renderer renderer(1920, 1080, "SFML works!");
     renderer.run();
     return 0;
 }

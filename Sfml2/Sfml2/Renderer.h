@@ -9,4 +9,9 @@ public:
 private:
     sf::RenderWindow window;
     sf::CircleShape shape;
+    sf::Font font;
+    sf::Text titleText;
+    sf::Texture backgroundTexture;
+    sf::Sprite backgroundSprite;
+
 };
