@@ -17,7 +17,7 @@ Renderer::Renderer(unsigned int width, unsigned int height, const std::string& t
     titleText.setPosition(200, 350);
 
     // Load background image
-    if (!backgroundTexture.loadFromFile("background.jpg")) {
+    if (!backgroundTexture.loadFromFile("background.png.png")) {
         
     }
     backgroundSprite.setTexture(backgroundTexture);

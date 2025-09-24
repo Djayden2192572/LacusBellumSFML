@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|solutionrelative:Sfml2\\Renderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Renderer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|solutionrelative:Sfml2\\Renderer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Sfml2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|solutionrelative:Sfml2\\Sfml2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -17,10 +21,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Character.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|solutionrelative:Sfml2\\Character.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Renderer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|solutionrelative:Sfml2\\Renderer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -40,14 +40,14 @@
               "RelativeDocumentMoniker": "Sfml2\\Renderer.cpp",
               "ToolTip": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Renderer.cpp",
               "RelativeToolTip": "Sfml2\\Renderer.cpp",
-              "ViewState": "AgIAAAsAAAAAAAAAAADwvxoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-09-24T07:32:49.913Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Renderer.h",
               "DocumentMoniker": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Renderer.h",
               "RelativeDocumentMoniker": "Sfml2\\Renderer.h",
@@ -60,7 +60,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Character.cpp",
               "DocumentMoniker": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Character.cpp",
               "RelativeDocumentMoniker": "Sfml2\\Character.cpp",
@@ -68,12 +68,11 @@
               "RelativeToolTip": "Sfml2\\Character.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-24T07:27:59.828Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-24T07:27:59.828Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Game.cpp",
               "DocumentMoniker": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Game.cpp",
               "RelativeDocumentMoniker": "Sfml2\\Game.cpp",
@@ -81,18 +80,17 @@
               "RelativeToolTip": "Sfml2\\Game.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-24T07:27:47.725Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-24T07:27:47.725Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Sfml2.cpp",
               "DocumentMoniker": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Sfml2.cpp",
               "RelativeDocumentMoniker": "Sfml2\\Sfml2.cpp",
               "ToolTip": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Sfml2.cpp",
               "RelativeToolTip": "Sfml2\\Sfml2.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-09-02T09:12:32.19Z",
               "EditorCaption": ""

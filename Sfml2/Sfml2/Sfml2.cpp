@@ -6,9 +6,11 @@
 #include<SFML/Window.hpp>
 #include<SFML/System.hpp>
 #include "Renderer.h"
+#include <filesystem>
 
 int main()
 {
+    std::cout << "Working directory: " << std::filesystem::current_path() << std::endl;
     Renderer renderer(1920, 1080, "SFML works!");
     renderer.run();
     return 0;
