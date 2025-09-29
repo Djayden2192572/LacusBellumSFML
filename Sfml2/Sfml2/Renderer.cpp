@@ -1,28 +1,30 @@
 #include "Renderer.h"
+#include <iostream>
+#include <SFML/Audio.hpp>
 
 Renderer::Renderer(unsigned int width, unsigned int height, const std::string& title)
     : window(sf::VideoMode(width, height), title), shape(100.f)
 {
-    shape.setFillColor(sf::Color::Green);
-    // Load font
-    if (!font.loadFromFile("arial.ttf")) {
-        
-    }
-
-    // Set up title text
-    titleText.setFont(font);
-    titleText.setString("Press Enter to Start");
-    titleText.setCharacterSize(40);
-    titleText.setFillColor(sf::Color::White);
-    titleText.setPosition(200, 350);
+   
 
     // Load background image
-    if (!backgroundTexture.loadFromFile("background.png.png")) {
+    if (!backgroundTexture.loadFromFile("Titlescreen.png")) {
+
         
     }
     backgroundSprite.setTexture(backgroundTexture);
+    //load music
+    if (!backgroundMusic.openFromFile("Assets/audio/titleview.wav")) {
+        std::cerr << "Failed to load music\n";
+    }
+    else {
+        backgroundMusic.setLoop(true);
+        backgroundMusic.setVolume(50);
+        backgroundMusic.play();
+    }
 
 }
+
 
 
 void Renderer::run() {

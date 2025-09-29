@@ -11,7 +11,7 @@
 int main()
 {
     std::cout << "Working directory: " << std::filesystem::current_path() << std::endl;
-    Renderer renderer(1920, 1080, "SFML works!");
+    Renderer renderer(1920, 1080, "SFML Tank Game");
     renderer.run();
     return 0;
 }

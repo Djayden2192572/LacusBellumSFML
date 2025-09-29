@@ -1,5 +1,8 @@
 #pragma once
+
 #include <SFML/Graphics.hpp>
+#include <SFML/Audio.hpp>   //  sf::Music
+#include <string>
 
 class Renderer {
 public:
@@ -8,10 +11,10 @@ public:
 
 private:
     sf::RenderWindow window;
-    sf::CircleShape shape;
-    sf::Font font;
-    sf::Text titleText;
     sf::Texture backgroundTexture;
     sf::Sprite backgroundSprite;
+    sf::CircleShape shape;
+    sf::Text titleText;
 
+    sf::Music backgroundMusic;  //  Persistent 
 };
