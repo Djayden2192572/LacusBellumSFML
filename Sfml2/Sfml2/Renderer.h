@@ -1,8 +1,9 @@
 #pragma once
 
 #include <SFML/Graphics.hpp>
-#include <SFML/Audio.hpp>   //  sf::Music
-#include <string>
+#include <SFML/Audio.hpp>
+#include <memory>
+#include "MainMenu.h"
 
 class Renderer {
 public:
@@ -15,6 +16,9 @@ private:
     sf::Sprite backgroundSprite;
     sf::CircleShape shape;
     sf::Text titleText;
+    sf::Font font;
+    sf::Music backgroundMusic;
 
-    sf::Music backgroundMusic;  //  Persistent 
+    std::unique_ptr<MainMenu> mainMenu;
+    bool isMainMenu = false;
 };
