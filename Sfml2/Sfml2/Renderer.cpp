@@ -15,15 +15,16 @@ Renderer::Renderer(unsigned int width, unsigned int height, const std::string& t
     );
 
     // Load font and set up title text
-    if (!font.loadFromFile("Assets/fonts/arial.ttf")) {
+    if (!font.loadFromFile("Assets/fonts/ReggaeOne.ttf")) {
         std::cerr << "Failed to load font\n";
     }
     titleText.setFont(font);
-    titleText.setString("Press Enter to Start");
-    titleText.setCharacterSize(48);
+    titleText.setString("Click to Start");
+    titleText.setCharacterSize(51);
     titleText.setFillColor(sf::Color::White);
-    titleText.setPosition(100, 100);
+    titleText.setPosition(450, 890);
 
+    
     // Load and play title music
     if (!backgroundMusic.openFromFile("Assets/audio/titleview.wav")) {
         std::cerr << "Failed to load title music\n";
@@ -37,6 +38,9 @@ Renderer::Renderer(unsigned int width, unsigned int height, const std::string& t
 
 void Renderer::run() {
     bool showTitle = true;
+    bool startGame = false;
+    bool openCodes = false;
+    bool quitGame = false;
 
     while (window.isOpen()) {
         sf::Event event;
@@ -51,9 +55,12 @@ void Renderer::run() {
                 if (!isMainMenu) {
                     isMainMenu = true;
                     backgroundMusic.stop();
-                    mainMenu = std::make_unique<MainMenu>();
+                    mainMenu = std::make_unique<MainMenu>(window.getSize());
                 }
             }
+        }
+            if (isMainMenu && mainMenu) {
+                mainMenu->handleEvent(event, window, startGame, openCodes, quitGame);
         }
 
         window.clear();
@@ -75,5 +82,10 @@ void Renderer::run() {
         }
 
         window.display();
+        // ? NOW check quitGame after drawing
+        if (quitGame) {
+            std::cout << "Quit button clicked\n";
+            window.close();
+        }
     }
 }

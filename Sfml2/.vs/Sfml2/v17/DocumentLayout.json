@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\MainMenu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|solutionrelative:Sfml2\\MainMenu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Renderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|solutionrelative:Sfml2\\Renderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Renderer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|solutionrelative:Sfml2\\Renderer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\MainMenu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|solutionrelative:Sfml2\\MainMenu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\MainMenu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -38,21 +38,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainMenu.cpp",
-              "DocumentMoniker": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\MainMenu.cpp",
-              "RelativeDocumentMoniker": "Sfml2\\MainMenu.cpp",
-              "ToolTip": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\MainMenu.cpp",
-              "RelativeToolTip": "Sfml2\\MainMenu.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-30T07:51:59.375Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Document",
               "DocumentIndex": 3,
@@ -61,7 +48,7 @@
               "RelativeDocumentMoniker": "Sfml2\\MainMenu.h",
               "ToolTip": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\MainMenu.h",
               "RelativeToolTip": "Sfml2\\MainMenu.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-09-30T07:44:10.903Z",
               "EditorCaption": ""
@@ -69,25 +56,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MainMenu.cpp",
+              "DocumentMoniker": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\MainMenu.cpp",
+              "RelativeDocumentMoniker": "Sfml2\\MainMenu.cpp",
+              "ToolTip": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\MainMenu.cpp",
+              "RelativeToolTip": "Sfml2\\MainMenu.cpp",
+              "ViewState": "AgIAADgAAAAAAAAAAAAUwDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-30T07:51:59.375Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Renderer.cpp",
               "DocumentMoniker": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Renderer.cpp",
               "RelativeDocumentMoniker": "Sfml2\\Renderer.cpp",
               "ToolTip": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Renderer.cpp",
               "RelativeToolTip": "Sfml2\\Renderer.cpp",
-              "ViewState": "AgIAADwAAAAAAAAAAAAUwEcAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAewEIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-09-24T07:32:49.913Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Renderer.h",
               "DocumentMoniker": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Renderer.h",
               "RelativeDocumentMoniker": "Sfml2\\Renderer.h",
               "ToolTip": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Renderer.h",
               "RelativeToolTip": "Sfml2\\Renderer.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-09-24T07:32:42.05Z",
               "EditorCaption": ""
