@@ -1,7 +1,7 @@
 #include "Player.h"
 
 Player::Player() {
-    m_texture.loadFromFile("player.png"); // Use a player-specific texture
+    m_texture.loadFromFile("Alexio.png"); // Use a player-specific texture
     m_sprite.setTexture(m_texture);
     m_sprite.setPosition(400, 400); // Example start position
 }

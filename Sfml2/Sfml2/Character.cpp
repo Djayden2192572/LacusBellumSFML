@@ -9,20 +9,7 @@ Character::Character()
     m_sprite.setPosition(400, 400); // Example start position
 }
 
-void Character::handleInput() {
-    sf::Vector2f movement(0.f, 0.f);
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) movement.y -= m_speed;
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) movement.y += m_speed;
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) movement.x -= m_speed;
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) movement.x += m_speed;
 
-    m_sprite.move(movement * 0.016f); // Assuming 60 FPS, otherwise use dt
-
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space) && m_timeSinceLastShot >= m_shootCooldown) {
-        shoot();
-        m_timeSinceLastShot = 0.f;
-    }
-}
 
 void Character::update(float dt) {
     m_timeSinceLastShot += dt;

@@ -21,7 +21,7 @@ protected:
     int m_hp;
     float m_speed;
 
-    std::vector<Projectile> m_projectiles; // If you have a projectile class
+    //std::vector<Projectile> m_projectiles; // If you have a projectile class
     float m_shootCooldown;
     float m_timeSinceLastShot;
 

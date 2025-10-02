@@ -1,6 +1,6 @@
 #include "Renderer.h"
 #include <iostream>
-
+#include "Player.h"
 Renderer::Renderer(unsigned int width, unsigned int height, const std::string& title)
     : window(sf::VideoMode(width, height), title), shape(100.f)
 {
@@ -41,6 +41,7 @@ void Renderer::run() {
     bool startGame = false;
     bool openCodes = false;
     bool quitGame = false;
+    bool inGame = false;
 
     while (window.isOpen()) {
         sf::Event event;
@@ -48,41 +49,54 @@ void Renderer::run() {
             if (event.type == sf::Event::Closed)
                 window.close();
 
-            if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Enter)
-                showTitle = false;
+            if (!inGame) {
+                if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Enter)
+                    showTitle = false;
 
-            if (event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left) {
-                if (!isMainMenu) {
-                    isMainMenu = true;
-                    backgroundMusic.stop();
-                    mainMenu = std::make_unique<MainMenu>(window.getSize());
+                if (event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left) {
+                    if (!isMainMenu) {
+                        isMainMenu = true;
+                        backgroundMusic.stop();
+                        mainMenu = std::make_unique<MainMenu>(window.getSize());
+                    }
                 }
             }
-        }
-            if (isMainMenu && mainMenu) {
+            if (isMainMenu && mainMenu && !inGame) {
                 mainMenu->handleEvent(event, window, startGame, openCodes, quitGame);
+            }
+        }
+
+        // Transition to game when startGame is true
+        if (startGame && !inGame) {
+            inGame = true;
+            mainMenu.reset(); // Hide main menu
         }
 
         window.clear();
 
-        if (isMainMenu && mainMenu) {
+        if (inGame) {
+            // --- GAME SCREEN START ---
+            window.clear(sf::Color(50, 50, 150)); // Game background
+
+            window.draw(player); // <-- Add this line to draw your player sprite
+
+            // You can draw other game objects here later
+            // --- GAME SCREEN END ---
+        }
+        else if (isMainMenu && mainMenu) {
             mainMenu->draw(window);
         }
         else {
             window.draw(backgroundSprite);
-
             if (showTitle) {
                 window.draw(titleText);
-            }
-            else {
+            } else {
                 window.draw(shape);
             }
-
-            
         }
 
         window.display();
-        // ? NOW check quitGame after drawing
+
         if (quitGame) {
             std::cout << "Quit button clicked\n";
             window.close();

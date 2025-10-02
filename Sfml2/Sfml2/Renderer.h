@@ -21,4 +21,5 @@ private:
 
     std::unique_ptr<MainMenu> mainMenu;
     bool isMainMenu = false;
+	Player player;
 };
