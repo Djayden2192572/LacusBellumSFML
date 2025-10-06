@@ -52,6 +52,7 @@ void Renderer::run() {
     bool openCodes = false;
     bool quitGame = false;
     bool inGame = false;
+    
 
     while (window.isOpen()) {
         sf::Event event;
@@ -80,7 +81,8 @@ void Renderer::run() {
         if (startGame && !inGame) {
             inGame = true;
             mainMenu.reset(); // Hide main menu
-
+            
+            
         }
 
         window.clear();

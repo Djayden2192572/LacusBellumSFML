@@ -3,6 +3,7 @@
 Player::Player() {
     m_texture.loadFromFile("Alexio.png"); // Use a player-specific texture
     m_sprite.setTexture(m_texture);
+    m_sprite.setScale(0.3f, 0.3f);
     m_sprite.setPosition(400, 400); // Example start position
 }
 
