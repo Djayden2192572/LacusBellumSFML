@@ -17,15 +17,11 @@ MainMenu::MainMenu(sf::Vector2u windowSize) {
     if (!backgroundTexture.loadFromFile("MainMenu.png")) {
         std::cerr << "Failed to load main menu background\n";
     }
-
-
     backgroundSprite.setTexture(backgroundTexture);
     backgroundSprite.setScale(
         static_cast<float>(windowSize.x) / backgroundTexture.getSize().x,
         static_cast<float>(windowSize.y) / backgroundTexture.getSize().y
-        
-
-    );
+         );
 
 
     float centerX = windowSize.x / 2.f;

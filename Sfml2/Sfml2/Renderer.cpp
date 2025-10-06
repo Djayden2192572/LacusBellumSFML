@@ -13,6 +13,16 @@ Renderer::Renderer(unsigned int width, unsigned int height, const std::string& t
         static_cast<float>(window.getSize().x) / backgroundTexture.getSize().x,
         static_cast<float>(window.getSize().y) / backgroundTexture.getSize().y
     );
+    //playscreen title bg
+    if (!gameplayBackgroundTexture.loadFromFile("GameBG.png")) {
+        std::cerr << "Failed to load gameplay background\n";
+    }
+    gameplayBackgroundSprite.setTexture(gameplayBackgroundTexture);
+    gameplayBackgroundSprite.setScale(
+        static_cast<float>(window.getSize().x) / gameplayBackgroundTexture.getSize().x,
+        static_cast<float>(window.getSize().y) / gameplayBackgroundTexture.getSize().y
+    );
+
 
     // Load font and set up title text
     if (!font.loadFromFile("Assets/fonts/ReggaeOne.ttf")) {
@@ -70,13 +80,16 @@ void Renderer::run() {
         if (startGame && !inGame) {
             inGame = true;
             mainMenu.reset(); // Hide main menu
+
         }
 
         window.clear();
 
         if (inGame) {
             // --- GAME SCREEN START ---
-            window.clear(sf::Color(50, 50, 150)); // Game background
+            window.draw(gameplayBackgroundSprite);
+
+            // Game background
 
             window.draw(player); // <-- Add this line to draw your player sprite
 

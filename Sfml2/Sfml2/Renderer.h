@@ -4,6 +4,8 @@
 #include <SFML/Audio.hpp>
 #include <memory>
 #include "MainMenu.h"
+#include "Player.h"
+
 
 class Renderer {
 public:
@@ -18,6 +20,9 @@ private:
     sf::Text titleText;
     sf::Font font;
     sf::Music backgroundMusic;
+    sf::Texture gameplayBackgroundTexture;
+    sf::Sprite gameplayBackgroundSprite;
+
 
     std::unique_ptr<MainMenu> mainMenu;
     bool isMainMenu = false;
