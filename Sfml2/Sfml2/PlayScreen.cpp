@@ -1,6 +1,7 @@
 #include "Playscreen.h"
 #include <iostream>
 
+
 PlayScreen::PlayScreen(sf::Vector2u windowSize, int stageNumber) : stage(stageNumber) {
     std::string bgPath = "Assets/images/stage" + std::to_string(stage) + "GameBG.png";
     std::string musicPath = "Assets/audio/stage" + std::to_string(stage) + "_theme.wav";
@@ -29,9 +30,9 @@ void PlayScreen::handleEvent(const sf::Event& event) {
 }
 
 void PlayScreen::update() {
-    // Add update logic here
+    std::cout << "PlayScreen update running\n"; // Debug
+    player.handleInput();
 }
-
 void PlayScreen::draw(sf::RenderWindow& window) {
     window.draw(backgroundSprite);
     window.draw(player);

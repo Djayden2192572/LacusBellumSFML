@@ -1,10 +1,11 @@
 #include "Character.h"
 #include "Projectile.h" // If you have a Projectile class
+#include "iostream"
 
 Character::Character()
     : m_hp(100), m_speed(200.f), m_shootCooldown(0.5f), m_timeSinceLastShot(0.f)
 {
-    m_texture.loadFromFile("character.png");
+    m_texture.loadFromFile("alexio.png");
     m_sprite.setTexture(m_texture);
     m_sprite.setPosition(400, 400); // Example start position
 }

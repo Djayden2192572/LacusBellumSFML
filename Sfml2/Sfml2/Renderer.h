@@ -5,6 +5,7 @@
 #include <memory>
 #include "MainMenu.h"
 #include "Player.h"
+#include "PlayScreen.h"
 
 
 class Renderer {
@@ -22,9 +23,10 @@ private:
     sf::Music backgroundMusic;
     sf::Texture gameplayBackgroundTexture;
     sf::Sprite gameplayBackgroundSprite;
+    std::unique_ptr<PlayScreen> playScreen;
 
 
     std::unique_ptr<MainMenu> mainMenu;
     bool isMainMenu = false;
-	Player player;
+	
 };

@@ -1,6 +1,7 @@
 #include "Renderer.h"
 #include <iostream>
 #include "Player.h"
+#include "PlayScreen.h"
 Renderer::Renderer(unsigned int width, unsigned int height, const std::string& title)
     : window(sf::VideoMode(width, height), title), shape(100.f)
 {
@@ -81,9 +82,14 @@ void Renderer::run() {
         if (startGame && !inGame) {
             inGame = true;
             mainMenu.reset(); // Hide main menu
-            
+            playScreen = std::make_unique<PlayScreen>(window.getSize(), 1);
             
         }
+        if (inGame && playScreen) {
+            playScreen->update();           // ? This triggers movement
+            playScreen->draw(window);       // This renders the player
+        }
+
 
         window.clear();
 
@@ -93,10 +99,11 @@ void Renderer::run() {
 
             // Game background
 
-            window.draw(player); // <-- Add this line to draw your player sprite
+            playScreen->draw(window);
+            // <-- Add this line to draw your player sprite
 
-            // You can draw other game objects here later
-            // --- GAME SCREEN END ---
+                // You can draw other game objects here later
+                // --- GAME SCREEN END ---
         }
         else if (isMainMenu && mainMenu) {
             mainMenu->draw(window);
