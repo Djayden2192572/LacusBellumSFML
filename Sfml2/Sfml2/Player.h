@@ -6,7 +6,7 @@ class Player : public Character {
 public:
     Player();
 
-    void handleInput(); // Player-specific input
+    void handleInput(float dt); // Player-specific input
 
 protected:
     void draw(sf::RenderTarget& target, sf::RenderStates states) const override;

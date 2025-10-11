@@ -1,7 +1,7 @@
 #include "Enemy.h"
 
 Enemy::Enemy() {
-    m_texture.loadFromFile("enemy.png"); // Use an enemy-specific texture
+    m_texture.loadFromFile("Juby.png"); // Use an enemy-specific texture
     m_sprite.setTexture(m_texture);
     m_sprite.setPosition(200, 200); // Example start position
 }

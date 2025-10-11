@@ -7,31 +7,33 @@ Player::Player() {
     m_sprite.setPosition(300, 300); // Example start position
 }
 
-void Player::handleInput() {
-    sf::Vector2f movement(0.f, 0.f);
-    std::cout << "handleInput called\n";
+void Player::handleInput(float dt) {
+    float rotationSpeed = 120.f; // degrees per second
+    float moveSpeed = m_speed;   // units per second
 
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
-        movement.y -= m_speed;
-        std::cout << "W pressed\n";
-    }
-    if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
-        movement.y += m_speed;
-        std::cout << "S pressed\n";
-    }
+    // Handle rotation
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::A)) {
-        movement.x -= m_speed;
-        std::cout << "A pressed\n";
+        m_sprite.rotate(-rotationSpeed * dt); // Turn left
     }
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::D)) {
-        movement.x += m_speed;
-        std::cout << "D pressed\n";
+        m_sprite.rotate(rotationSpeed * dt);  // Turn right
     }
 
-    m_sprite.move(movement * 0.016f); // Replace with dt if available
+    // Handle forward/backward movement
+    sf::Vector2f movement(0.f, 0.f);
+    float angleRad = m_sprite.getRotation() * 3.14159265f / 180.f;
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::W)) {
+        movement.x += std::cos(angleRad) * moveSpeed * dt;
+        movement.y += std::sin(angleRad) * moveSpeed * dt;
+    }
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::S)) {
+        movement.x -= std::cos(angleRad) * moveSpeed * dt;
+        movement.y -= std::sin(angleRad) * moveSpeed * dt;
+    }
+
+    m_sprite.move(movement);
 
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space) && m_timeSinceLastShot >= m_shootCooldown) {
-        std::cout << "Space pressed - shooting\n";
         shoot();
         m_timeSinceLastShot = 0.f;
     }

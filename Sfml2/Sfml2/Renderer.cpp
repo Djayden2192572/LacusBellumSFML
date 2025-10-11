@@ -53,9 +53,12 @@ void Renderer::run() {
     bool openCodes = false;
     bool quitGame = false;
     bool inGame = false;
-    
+    sf::Clock clock;
+
 
     while (window.isOpen()) {
+        float dt = clock.restart().asSeconds();
+
         sf::Event event;
         while (window.pollEvent(event)) {
             if (event.type == sf::Event::Closed)
@@ -84,10 +87,12 @@ void Renderer::run() {
             mainMenu.reset(); // Hide main menu
             playScreen = std::make_unique<PlayScreen>(window.getSize(), 1);
             
+
         }
         if (inGame && playScreen) {
-            playScreen->update();           // ? This triggers movement
+            playScreen->update(dt);           // ? This triggers movement
             playScreen->draw(window);       // This renders the player
+            playScreen->update(dt);
         }
 
 

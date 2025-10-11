@@ -26,12 +26,12 @@ PlayScreen::PlayScreen(sf::Vector2u windowSize, int stageNumber) : stage(stageNu
 }
 
 void PlayScreen::handleEvent(const sf::Event& event) {
-    player.handleInput();
+    //player.handleInput();
 }
 
-void PlayScreen::update() {
+void PlayScreen::update(float dt) {
     std::cout << "PlayScreen update running\n"; // Debug
-    player.handleInput();
+    player.handleInput(dt);
 }
 void PlayScreen::draw(sf::RenderWindow& window) {
     window.draw(backgroundSprite);
