@@ -32,6 +32,8 @@ void PlayScreen::handleEvent(const sf::Event& event) {
 void PlayScreen::update(float dt) {
     std::cout << "PlayScreen update running\n"; // Debug
     player.handleInput(dt);
+    // Enemy movement toward player
+    enemy.updateAI(dt, player.getPosition());
 }
 void PlayScreen::draw(sf::RenderWindow& window) {
     window.draw(backgroundSprite);

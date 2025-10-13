@@ -1,4 +1,7 @@
-﻿  PlayScreen.cpp
+﻿  Enemy.cpp
+  PlayScreen.cpp
+  Player.cpp
+  Renderer.cpp
   Sfml2.cpp
   Generating Code...
-  Sfml2.vcxproj -> C:\Users\Jackv\source\repos\sfml-super-cool\Sfml2\x64\Debug\Sfml2.exe
+  Sfml2.vcxproj -> C:\Users\brouw\OneDrive\Bureaublad\leosona\Sfml ultra cool\sfml-super-cool\Sfml2\x64\Debug\Sfml2.exe

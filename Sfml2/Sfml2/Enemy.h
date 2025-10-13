@@ -6,7 +6,7 @@ class Enemy : public Character {
 public:
     Enemy();
 
-    void updateAI(float dt); // Enemy-specific AI logic
+    void updateAI(float dt, sf::Vector2f playerPos); // Enemy-specific AI logic
 
 protected:
     void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
