@@ -1,57 +1,60 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\",
+  "WorkspaceRootPath": "C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\PlayScreen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|solutionrelative:Sfml2\\PlayScreen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Renderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|solutionrelative:Sfml2\\Renderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|solutionrelative:Sfml2\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|solutionrelative:Sfml2\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|solutionrelative:Sfml2\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|solutionrelative:Sfml2\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Playscreen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|solutionrelative:Sfml2\\Playscreen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Sfml2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|solutionrelative:Sfml2\\Sfml2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Renderer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|solutionrelative:Sfml2\\Renderer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Character.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\Character.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|solutionrelative:Sfml2\\Character.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Character.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|solutionrelative:Sfml2\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\Character.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|solutionrelative:Sfml2\\Character.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\MainMenu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|C:\\PROGRAM FILES\\MICROSOFT VISUAL STUDIO\\2022\\COMMUNITY\\VC\\TOOLS\\MSVC\\14.44.35207\\INCLUDE\\VECTOR||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\Sfml2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|solutionrelative:Sfml2\\Sfml2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|solutionrelative:Sfml2\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\PlayScreen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|solutionrelative:Sfml2\\PlayScreen.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\Renderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|solutionrelative:Sfml2\\Renderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|solutionrelative:Sfml2\\Enemy.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|solutionrelative:Sfml2\\Enemy.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\Playscreen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|solutionrelative:Sfml2\\Playscreen.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\Renderer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|solutionrelative:Sfml2\\Renderer.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\MainMenu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|solutionrelative:Sfml2\\MainMenu.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\MainMenu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\MainMenu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{465C9443-349D-4D66-B035-6E07546FA7AE}|Sfml2\\Sfml2.vcxproj|solutionrelative:Sfml2\\MainMenu.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
@@ -62,28 +65,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Enemy.cpp",
-              "DocumentMoniker": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Enemy.cpp",
-              "RelativeDocumentMoniker": "Sfml2\\Enemy.cpp",
-              "ToolTip": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Enemy.cpp",
-              "RelativeToolTip": "Sfml2\\Enemy.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-10-02T14:01:44.563Z",
+              "DocumentIndex": 3,
+              "Title": "vector",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\vector",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\vector",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\vector",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.44.35207\\include\\vector",
+              "ViewState": "AgIAAB8IAAAAAAAAAAAQwCwIAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-13T21:31:55.108Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "PlayScreen.cpp",
-              "DocumentMoniker": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\PlayScreen.cpp",
+              "DocumentMoniker": "C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\PlayScreen.cpp",
               "RelativeDocumentMoniker": "Sfml2\\PlayScreen.cpp",
-              "ToolTip": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\PlayScreen.cpp",
+              "ToolTip": "C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\PlayScreen.cpp",
               "RelativeToolTip": "Sfml2\\PlayScreen.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -92,35 +95,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
               "Title": "Character.cpp",
-              "DocumentMoniker": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Character.cpp",
+              "DocumentMoniker": "C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\Character.cpp",
               "RelativeDocumentMoniker": "Sfml2\\Character.cpp",
-              "ToolTip": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Character.cpp",
+              "ToolTip": "C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\Character.cpp",
               "RelativeToolTip": "Sfml2\\Character.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACcAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-24T07:27:59.828Z"
+              "WhenOpened": "2025-09-24T07:27:59.828Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "Sfml2.cpp",
-              "DocumentMoniker": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Sfml2.cpp",
+              "DocumentMoniker": "C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\Sfml2.cpp",
               "RelativeDocumentMoniker": "Sfml2\\Sfml2.cpp",
-              "ToolTip": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Sfml2.cpp",
+              "ToolTip": "C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\Sfml2.cpp",
               "RelativeToolTip": "Sfml2\\Sfml2.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-02T09:12:32.19Z"
+              "WhenOpened": "2025-09-02T09:12:32.19Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "PlayScreen.h",
-              "DocumentMoniker": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\PlayScreen.h",
+              "DocumentMoniker": "C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\PlayScreen.h",
               "RelativeDocumentMoniker": "Sfml2\\PlayScreen.h",
-              "ToolTip": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\PlayScreen.h",
+              "ToolTip": "C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\PlayScreen.h",
               "RelativeToolTip": "Sfml2\\PlayScreen.h",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -128,24 +133,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "Renderer.cpp",
-              "DocumentMoniker": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Renderer.cpp",
+              "DocumentMoniker": "C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\Renderer.cpp",
               "RelativeDocumentMoniker": "Sfml2\\Renderer.cpp",
-              "ToolTip": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Renderer.cpp",
+              "ToolTip": "C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\Renderer.cpp",
               "RelativeToolTip": "Sfml2\\Renderer.cpp",
               "ViewState": "AgIAAC0AAAAAAAAAAAAAADUAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-09-24T07:32:49.913Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-24T07:32:49.913Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Player.h",
-              "DocumentMoniker": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Player.h",
+              "DocumentMoniker": "C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\Player.h",
               "RelativeDocumentMoniker": "Sfml2\\Player.h",
-              "ToolTip": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Player.h",
+              "ToolTip": "C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\Player.h",
               "RelativeToolTip": "Sfml2\\Player.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -154,11 +158,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Renderer.h",
-              "DocumentMoniker": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Renderer.h",
+              "DocumentMoniker": "C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\Renderer.h",
               "RelativeDocumentMoniker": "Sfml2\\Renderer.h",
-              "ToolTip": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Renderer.h",
+              "ToolTip": "C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\Renderer.h",
               "RelativeToolTip": "Sfml2\\Renderer.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
@@ -166,49 +170,61 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Player.cpp",
-              "DocumentMoniker": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Player.cpp",
+              "DocumentMoniker": "C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\Player.cpp",
               "RelativeDocumentMoniker": "Sfml2\\Player.cpp",
-              "ToolTip": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Player.cpp",
+              "ToolTip": "C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\Player.cpp",
               "RelativeToolTip": "Sfml2\\Player.cpp",
-              "ViewState": "AgIAACEAAAAAAAAAAAAAADMAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAUwAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-10-02T14:26:40.005Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Enemy.h",
-              "DocumentMoniker": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Enemy.h",
-              "RelativeDocumentMoniker": "Sfml2\\Enemy.h",
-              "ToolTip": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Enemy.h",
-              "RelativeToolTip": "Sfml2\\Enemy.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAACAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "Character.h",
+              "DocumentMoniker": "C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\Character.h",
+              "RelativeDocumentMoniker": "Sfml2\\Character.h",
+              "ToolTip": "C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\Character.h",
+              "RelativeToolTip": "Sfml2\\Character.h",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-10-02T13:57:14.969Z",
+              "WhenOpened": "2025-10-02T14:51:01.551Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Character.h",
-              "DocumentMoniker": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Character.h",
-              "RelativeDocumentMoniker": "Sfml2\\Character.h",
-              "ToolTip": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\Character.h",
-              "RelativeToolTip": "Sfml2\\Character.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-10-02T14:51:01.551Z"
+              "DocumentIndex": 9,
+              "Title": "Enemy.cpp",
+              "DocumentMoniker": "C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\Enemy.cpp",
+              "RelativeDocumentMoniker": "Sfml2\\Enemy.cpp",
+              "ToolTip": "C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\Enemy.cpp",
+              "RelativeToolTip": "Sfml2\\Enemy.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-10-02T14:01:44.563Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 8,
+              "Title": "Enemy.h",
+              "DocumentMoniker": "C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\Enemy.h",
+              "RelativeDocumentMoniker": "Sfml2\\Enemy.h",
+              "ToolTip": "C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\Enemy.h",
+              "RelativeToolTip": "Sfml2\\Enemy.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-10-02T13:57:14.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "MainMenu.cpp",
-              "DocumentMoniker": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\MainMenu.cpp",
+              "DocumentMoniker": "C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\MainMenu.cpp",
               "RelativeDocumentMoniker": "Sfml2\\MainMenu.cpp",
-              "ToolTip": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\MainMenu.cpp",
+              "ToolTip": "C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\MainMenu.cpp",
               "RelativeToolTip": "Sfml2\\MainMenu.cpp",
               "ViewState": "AgIAAD8AAAAAAAAAAAAAABcAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
@@ -216,11 +232,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "MainMenu.h",
-              "DocumentMoniker": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\MainMenu.h",
+              "DocumentMoniker": "C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\MainMenu.h",
               "RelativeDocumentMoniker": "Sfml2\\MainMenu.h",
-              "ToolTip": "C:\\Users\\brouw\\OneDrive\\Bureaublad\\leosona\\Sfml ultra cool\\sfml-super-cool\\Sfml2\\Sfml2\\MainMenu.h",
+              "ToolTip": "C:\\Users\\Jackv\\source\\repos\\sfml-super-cool\\Sfml2\\Sfml2\\MainMenu.h",
               "RelativeToolTip": "Sfml2\\MainMenu.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",

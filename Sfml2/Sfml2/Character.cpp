@@ -8,12 +8,22 @@ Character::Character()
     m_texture.loadFromFile("alexio.png");
     m_sprite.setTexture(m_texture);
     m_sprite.setPosition(400, 400); // Example start position
+    m_sprite.setOrigin(
+        m_texture.getSize().x / 2.f,
+        m_texture.getSize().y / 2.f
+        );
+    
 }
 
 
 
 void Character::update(float dt) {
     m_timeSinceLastShot += dt;
+    for (auto& proj : m_projectiles) proj.update(dt);
+    m_projectiles.erase(
+       std::remove_if(m_projectiles.begin(), m_projectiles.end(),
+                      [](const Projectile& p) { return !p.isAlive(); }),
+       m_projectiles.end());
     // Update projectiles, etc.
 }
 
@@ -27,11 +37,16 @@ int Character::getHP() const {
 }
 
 void Character::shoot() {
-    // Add a new projectile to m_projectiles
-    // Example: m_projectiles.push_back(Projectile(m_sprite.getPosition()));
+    std::cout << "Shooting!\n";
+    float angle = m_sprite.getRotation() * 3.14159265f / 180.f;
+    sf::Vector2f direction(std::cos(angle), std::sin(angle));
+    float speed = 400.f; // Adjust as needed
+    m_projectiles.emplace_back(m_sprite.getPosition(), direction * speed);
+ 
 }
 
 void Character::draw(sf::RenderTarget& target, sf::RenderStates states) const {
     target.draw(m_sprite, states);
+    for (const auto& proj : m_projectiles) target.draw(proj, states);
     // Draw projectiles if you have them
 }

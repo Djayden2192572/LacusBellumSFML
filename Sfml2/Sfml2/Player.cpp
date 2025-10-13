@@ -5,6 +5,7 @@ Player::Player() {
     m_sprite.setTexture(m_texture);
     m_sprite.setScale(0.3f, 0.3f);
     m_sprite.setPosition(300, 300); // Example start position
+
 }
 
 void Player::handleInput(float dt) {
