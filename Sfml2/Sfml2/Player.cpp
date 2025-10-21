@@ -38,6 +38,14 @@ void Player::handleInput(float dt) {
         m_timeSinceLastShot = 0.f;
     }
 }
+sf::FloatRect Player::getGlobalBounds() const {
+    return m_sprite.getGlobalBounds();
+}
+
+void Player::revertMovement() {
+    // Move the player back by their last movement
+    m_sprite.move(-m_lastMovement);
+}
 
 
 void Player::draw(sf::RenderTarget& target, sf::RenderStates states) const {

@@ -3,7 +3,8 @@
 Enemy::Enemy() {
     m_texture.loadFromFile("Juby.png"); // Use an enemy-specific texture
     m_sprite.setTexture(m_texture);
-    m_sprite.setPosition(200, 200); // Example start position
+    m_sprite.setPosition(700, 700); // Example start position
+    m_speed = 100.f; 
 }
 
 void Enemy::updateAI(float dt, sf::Vector2f playerPos) {

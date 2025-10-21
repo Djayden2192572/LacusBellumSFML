@@ -3,6 +3,8 @@
 #include <SFML/Audio.hpp>
 #include "Player.h"
 #include "Enemy.h"
+#include "Wall.h"
+#include <vector>
 
 class PlayScreen {
 public:
@@ -14,6 +16,7 @@ public:
 private:
     sf::Texture backgroundTexture;
     sf::Sprite backgroundSprite;
+    std::vector<Wall> walls;
 
     sf::Music stageMusic;
 
