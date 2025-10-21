@@ -3,7 +3,7 @@
 
 class Projectile : public sf::Drawable {
 public:
-    Projectile(const sf::Vector2f& position, const sf::Vector2f& velocity, float lifetime = 2.0f);
+    Projectile(const sf::Vector2f& position, const sf::Vector2f& velocity, float lifetime = 4.0f);
 
     void update(float dt);
     bool isAlive() const;

@@ -5,7 +5,7 @@
 Character::Character()
     : m_hp(100), m_speed(200.f), m_shootCooldown(0.5f), m_timeSinceLastShot(0.f)
 {
-    m_texture.loadFromFile("alexio.png");
+    m_texture.loadFromFile("Alexio.png");
     m_sprite.setTexture(m_texture);
     m_sprite.setPosition(400, 400); // Example start position
     m_sprite.setOrigin(

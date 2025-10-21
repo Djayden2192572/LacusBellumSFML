@@ -42,9 +42,8 @@ void Player::handleInput(float dt) {
 
 
 void Player::draw(sf::RenderTarget& target, sf::RenderStates states) const {
-    target.draw(m_sprite, states);
-    // Optionally draw projectiles here if managed by Player
-   
+    // Call base class draw so the Character-managed sprite AND projectiles are drawn.
+    Character::draw(target, states);
 }
 sf::Vector2f Player::getPosition() const {
     ;

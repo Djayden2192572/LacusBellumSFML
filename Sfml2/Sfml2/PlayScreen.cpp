@@ -31,7 +31,12 @@ void PlayScreen::handleEvent(const sf::Event& event) {
 
 void PlayScreen::update(float dt) {
     std::cout << "PlayScreen update running\n"; // Debug
+    // Process input that may fire projectiles / move the player
     player.handleInput(dt);
+
+    // IMPORTANT: update the player so character::update runs (projectiles move, lifetime, cooldown)
+    player.update(dt);
+
     // Enemy movement toward player
     enemy.updateAI(dt, player.getPosition());
 }
