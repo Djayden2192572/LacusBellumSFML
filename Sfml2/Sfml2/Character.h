@@ -10,7 +10,8 @@ public:
     Character();
 
     void handleInput();      // For movement and shooting (if player-controlled)
-    void update(float dt);   // For updating position, projectiles, etc.
+    // Updated: pass optional pointer to walls (nullptr = none)
+    void update(float dt, const std::vector<sf::RectangleShape>* walls = nullptr);   // For updating position, projectiles, etc.
     void takeDamage(int amount);
     int getHP() const;
     
@@ -23,7 +24,6 @@ protected:
     int m_hp;
     float m_speed;
 
-    //awastd::vector<Projectile> m_projectiles; // If you have a projectile class
     float m_shootCooldown;
     float m_timeSinceLastShot;
 

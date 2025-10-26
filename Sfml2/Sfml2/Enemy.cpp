@@ -1,10 +1,13 @@
 #include "Enemy.h"
 
 Enemy::Enemy() {
-    m_texture.loadFromFile("Juby.png"); // Use an enemy-specific texture
+    m_texture.loadFromFile("ben.png"); // Use an enemy-specific texture
     m_sprite.setTexture(m_texture);
-    m_sprite.setPosition(700, 700); // Example start position
-    m_speed = 100.f; 
+    m_sprite.setScale(0.3f, 0.3f);
+    sf::FloatRect lb = m_sprite.getLocalBounds();
+    m_sprite.setOrigin(lb.width * 0.5f, lb.height * 0.5f);
+    m_sprite.setPosition(1650, 900); // Example start position
+    m_speed = 00.f; 
 }
 
 void Enemy::updateAI(float dt, sf::Vector2f playerPos) {
