@@ -4,6 +4,16 @@
 PlayScreen::PlayScreen(sf::Vector2u windowSize, int stageNumber) : stage(stageNumber) {
     
     std::string musicPath = "Assets/audio/stage" + std::to_string(stage) + "_theme.wav";
+    if (!stageMusic.openFromFile(musicPath)) {
+        std::cerr << "Failed to load stage music\n";
+    }
+    stageMusic.setLoop(true);
+    stageMusic.play();
+
+    if (!pauseMusic.openFromFile("Assets/audio/pause_theme.wav")) {
+        std::cerr << "Failed to load pause music\n";
+    }
+    pauseMusic.setLoop(true);
 
     sf::RectangleShape wall1(sf::Vector2f(1700, 40));
     wall1.setPosition(100, 1000);
@@ -45,6 +55,10 @@ PlayScreen::PlayScreen(sf::Vector2u windowSize, int stageNumber) : stage(stageNu
     wall8.setFillColor(sf::Color(200, 200, 220, 200));
     walls.push_back(wall8);
    
+    if (!reggaeFont.loadFromFile("Assets/fonts/ReggaeOne.ttf")) {
+        std::cerr << "Failed to load ReggaeOne font\n";
+    }
+
 
     
 
@@ -54,23 +68,38 @@ PlayScreen::PlayScreen(sf::Vector2u windowSize, int stageNumber) : stage(stageNu
         static_cast<float>(windowSize.y) / backgroundTexture.getSize().y
     );
 
-    if (!stageMusic.openFromFile(musicPath))
-        std::cerr << "Failed to load music for stage " << stage << "\n";
-    else {
-        stageMusic.setLoop(true);
-        stageMusic.setVolume(50);
-        stageMusic.play();
     }
-}
+
 
 void PlayScreen::handleEvent(const sf::Event& event) {}
 
 void PlayScreen::update(float dt) {
-    std::cout << "PlayScreen update running\n"; // Debug
+    
 
     // First update characters so timers & existing projectiles advance
     player.update(dt, &walls);
     enemy.update(dt, &walls);
+    
+    
+    
+    if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) {
+        isPaused = !isPaused;
+        sf::sleep(sf::milliseconds(200)); // debounce
+
+        if (isPaused) {
+            stageMusic.pause();
+            pauseMusic.play();
+        }
+        else {
+            pauseMusic.stop();
+            stageMusic.play();
+        }
+    }
+
+    if (isPaused) return; // skip movement, enemy logic, etc.
+
+
+
 
     // Then process input/AI (they may spawn new projectiles that will be updated next frame)
     player.handleInput(dt, walls);
@@ -81,6 +110,23 @@ void PlayScreen::draw(sf::RenderWindow& window) {
     window.draw(backgroundSprite);
     for (const auto& wall : walls)
         window.draw(wall);
+
+    if (isPaused) {
+        sf::Text pauseText;
+        pauseText.setFont(reggaeFont); // make sure you’ve loaded a font
+        pauseText.setString("Paused");
+        pauseText.setCharacterSize(70);
+        pauseText.setFillColor(sf::Color::White);
+        pauseText.setPosition(750.f, 540.f); // center it
+        sf::RectangleShape overlay;
+        overlay.setSize(sf::Vector2f(1920.f, 1080.f));
+        overlay.setFillColor(sf::Color(0, 0, 0, 150)); // semi-transparent black
+
+        window.draw(overlay);
+
+        window.draw(pauseText);
+    }
+
 
     window.draw(player);
     window.draw(enemy);

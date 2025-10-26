@@ -16,7 +16,9 @@ private:
     sf::Texture backgroundTexture;
     sf::Sprite backgroundSprite;
     sf::Music stageMusic;
-
+    sf::Music pauseMusic;
+    bool isPaused = false;
+    sf::Font reggaeFont;
     Player player;
     Enemy enemy;
     int stage;
