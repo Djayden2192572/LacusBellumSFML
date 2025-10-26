@@ -1,6 +1,7 @@
 #pragma once
 #include <SFML/Graphics.hpp>
 #include <vector>
+#include "Projectile.h"
 
 class Projectile; // Forward declaration if you have a Projectile class
 
@@ -12,10 +13,11 @@ public:
     void update(float dt);   // For updating position, projectiles, etc.
     void takeDamage(int amount);
     int getHP() const;
-
+    
 protected:
-    void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 
+    void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
+    std::vector<Projectile> m_projectiles;
     sf::Sprite m_sprite;
     sf::Texture m_texture;
     int m_hp;

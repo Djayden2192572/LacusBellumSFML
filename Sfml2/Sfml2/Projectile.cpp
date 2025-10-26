@@ -3,8 +3,8 @@
 Projectile::Projectile(const sf::Vector2f& position, const sf::Vector2f& velocity, float lifetime)
     : m_velocity(velocity), m_lifetime(lifetime), m_age(0.0f)
 {
-    m_shape.setRadius(5.0f);
-    m_shape.setFillColor(sf::Color::Red);
+    m_shape.setRadius(10.0f);
+    m_shape.setFillColor(sf::Color::Black);
     m_shape.setPosition(position);
 }
 
