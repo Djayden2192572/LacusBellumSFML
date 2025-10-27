@@ -37,7 +37,7 @@ void Enemy::updateAI(float dt, sf::Vector2f playerPos) {
 
     // Shoot
     if (shootTimer >= shootCooldown) {
-        shootTimer = 0.f;
+        shootTimer = -6.f;
         shoot(playerPos);
     }
 

@@ -59,9 +59,6 @@ PlayScreen::PlayScreen(sf::Vector2u windowSize, int stageNumber) : stage(stageNu
         std::cerr << "Failed to load ReggaeOne font\n";
     }
 
-
-    
-
     backgroundSprite.setTexture(backgroundTexture);
     backgroundSprite.setScale(
         static_cast<float>(windowSize.x) / backgroundTexture.getSize().x,
@@ -88,19 +85,51 @@ void PlayScreen::update(float dt) {
         }
     }
 
-   
     if (isPaused) return; // stop everything while paused
 
+    // If a result has already been set, stop normal updates
+    if (m_result != Result::None) return;
 
-    // First update characters so timers & existing projectiles advance
+    // First update characters so timers & existing projectiles advance (walls passed for wall-collision)
     player.update(dt, &walls);
     enemy.updateAI(dt, player.getPosition());  // correct Enemy function
     enemy.updateProjectiles(dt, walls);
-    
-    
-    
-   
-    
+
+    // --- projectile vs character collisions ---
+    // Player projectiles vs Enemy
+    for (auto& proj : player.getProjectiles()) {
+        if (!proj.isAlive()) continue;
+        if (proj.getGlobalBounds().intersects(enemy.getGlobalBounds())) {
+            enemy.takeDamage(proj.getDamage());
+            proj.kill();
+        }
+    }
+
+    // Enemy projectiles vs Player
+    for (auto& proj : enemy.getProjectiles()) {
+        if (!proj.isAlive()) continue;
+        if (proj.getGlobalBounds().intersects(player.getGlobalBounds())) {
+            player.takeDamage(proj.getDamage());
+            proj.kill();
+        }
+    }
+    // --- end projectile/character collisions ---
+
+    // Check for death and set result accordingly
+    if (player.getHP() <= 0 && m_result == Result::None) {
+        m_result = Result::PlayerDead;
+        stageMusic.stop();
+        std::cout << "Player died\n";
+        return;
+    }
+    if (enemy.getHP() <= 0 && m_result == Result::None) {
+        m_result = Result::EnemyDead;
+        stageMusic.stop();
+        std::cout << "Enemy died\n";
+        return;
+    }
+
+    // simple wall bounce for enemy movement
     for (const auto& wall : walls) {
         if (enemy.getGlobalBounds().intersects(wall.getGlobalBounds())) {
             // reverse a bit to simulate bounce
@@ -108,13 +137,9 @@ void PlayScreen::update(float dt) {
         }
     }
 
-
-
-
     // Then process input/AI (they may spawn new projectiles that will be updated next frame)
     player.handleInput(dt, walls);
     enemy.updateAI(dt, player.getPosition());
-
 }
 
 
@@ -139,6 +164,34 @@ void PlayScreen::draw(sf::RenderWindow& window) {
         window.draw(pauseText);
     }
 
+    // Draw HP HUD
+    if (!reggaeFont.getInfo().family.empty()) {
+        // Player HP (top-left)
+        sf::Text playerHpText;
+        playerHpText.setFont(reggaeFont);
+        playerHpText.setString("Player HP: " + std::to_string(player.getHP()));
+        playerHpText.setCharacterSize(40);
+        playerHpText.setFillColor(sf::Color::White);
+        playerHpText.setOutlineColor(sf::Color::Black);
+        playerHpText.setOutlineThickness(2.f);
+        playerHpText.setPosition(16.f, 12.f);
+        window.draw(playerHpText);
+
+        // Enemy HP (top-right)
+        sf::Text enemyHpText;
+        enemyHpText.setFont(reggaeFont);
+        enemyHpText.setString("Enemy HP: " + std::to_string(enemy.getHP()));
+        enemyHpText.setCharacterSize(40);
+        enemyHpText.setFillColor(sf::Color::White);
+        enemyHpText.setOutlineColor(sf::Color::Black);
+        enemyHpText.setOutlineThickness(2.f);
+
+        auto winSize = window.getSize();
+        // position using window width so it stays on the right
+        float x = static_cast<float>(winSize.x) - enemyHpText.getLocalBounds().width - 24.f;
+        enemyHpText.setPosition(x, 12.f);
+        window.draw(enemyHpText);
+    }
 
     window.draw(player);
     window.draw(enemy);

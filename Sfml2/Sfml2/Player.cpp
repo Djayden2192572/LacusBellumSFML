@@ -68,7 +68,7 @@ void Player::handleInput(float dt, const std::vector<sf::RectangleShape>& walls)
 
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space) && m_timeSinceLastShot >= m_shootCooldown) {
         shoot();
-        m_timeSinceLastShot = 0.f;
+        m_timeSinceLastShot = -1.f;
     }
 }
 

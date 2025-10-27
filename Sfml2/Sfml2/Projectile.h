@@ -12,6 +12,11 @@ public:
     
     void setColor(const sf::Color& color) { m_shape.setFillColor(color); }
 
+    // damage / utility API
+    int getDamage() const;
+    void setDamage(int dmg);
+    void kill();                     // mark dead so it's removed next update
+    sf::FloatRect getGlobalBounds() const;
 
 protected:
     void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
@@ -22,4 +27,5 @@ private:
     float m_lifetime;
     float m_age;
     bool m_alive;
+    int m_damage;
 };

@@ -28,5 +28,13 @@ private:
 
     std::unique_ptr<MainMenu> mainMenu;
     bool isMainMenu = false;
+
+    // Game-over image assets (win/lose)
+    sf::Texture gameOverWinTexture;
+    sf::Sprite  gameOverWinSprite;
+    sf::Texture gameOverLoseTexture;
+    sf::Sprite  gameOverLoseSprite;
+    bool gameOverWinLoaded = false;
+    bool gameOverLoseLoaded = false;
 	
 };

@@ -14,7 +14,11 @@ public:
     void update(float dt, const std::vector<sf::RectangleShape>* walls = nullptr);   // For updating position, projectiles, etc.
     void takeDamage(int amount);
     int getHP() const;
-    
+
+    // expose projectiles so PlayScreen can test collisions
+    std::vector<Projectile>& getProjectiles() { return m_projectiles; }
+    const std::vector<Projectile>& getProjectiles() const { return m_projectiles; }
+
 protected:
 
     void draw(sf::RenderTarget& target, sf::RenderStates states) const override;

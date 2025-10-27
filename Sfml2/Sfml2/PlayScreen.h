@@ -7,10 +7,15 @@
 
 class PlayScreen {
 public:
+    enum class Result { None, PlayerDead, EnemyDead };
+
     PlayScreen(sf::Vector2u windowSize, int stageNumber);
     void handleEvent(const sf::Event& event);
     void update(float dt);
     void draw(sf::RenderWindow& window);
+
+    // Query result (None while playing)
+    Result getResult() const { return m_result; }
 
 private:
     sf::Texture backgroundTexture;
@@ -24,4 +29,6 @@ private:
     int stage;
 
     std::vector<sf::RectangleShape> walls;
+
+    Result m_result = Result::None;
 };

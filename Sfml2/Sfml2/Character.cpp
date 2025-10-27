@@ -4,7 +4,7 @@
 #include <algorithm>
 
 Character::Character()
-    : m_hp(100), m_speed(100.f), m_shootCooldown(0.5f), m_timeSinceLastShot(0.f)
+    : m_hp(10), m_speed(200.f), m_shootCooldown(0.5f), m_timeSinceLastShot(0.f)
 {
     m_texture.loadFromFile("Alexio.png");
     m_sprite.setTexture(m_texture);
@@ -30,7 +30,7 @@ void Character::update(float dt, const std::vector<sf::RectangleShape>* walls) {
 
 void Character::takeDamage(int amount) {
     m_hp -= amount;
-    if (m_hp < 0) m_hp = 0;
+    if (m_hp < 0) m_hp = 10;
 }
 
 int Character::getHP() const {

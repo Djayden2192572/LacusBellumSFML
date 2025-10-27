@@ -1,2 +1,12 @@
-﻿  PlayScreen.cpp
-  Sfml2.vcxproj -> C:\Users\brouw\OneDrive\Bureaublad\leosona\Sfml ultra cool\sfml-super-cool\Sfml2\x64\Debug\Sfml2.exe
+﻿  Renderer.cpp
+C:\Users\Jackv\source\repos\sfml-super-cool\Sfml2\Sfml2\Renderer.cpp(118,77): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\Jackv\source\repos\sfml-super-cool\Sfml2\Sfml2\Renderer.cpp(118,77): warning C4244:         with
+C:\Users\Jackv\source\repos\sfml-super-cool\Sfml2\Sfml2\Renderer.cpp(118,77): warning C4244:         [
+C:\Users\Jackv\source\repos\sfml-super-cool\Sfml2\Sfml2\Renderer.cpp(118,77): warning C4244:             T=float
+C:\Users\Jackv\source\repos\sfml-super-cool\Sfml2\Sfml2\Renderer.cpp(118,77): warning C4244:         ]
+C:\Users\Jackv\source\repos\sfml-super-cool\Sfml2\Sfml2\Renderer.cpp(118,56): warning C4244: 'argument': conversion from 'int' to 'T', possible loss of data
+C:\Users\Jackv\source\repos\sfml-super-cool\Sfml2\Sfml2\Renderer.cpp(118,56): warning C4244:         with
+C:\Users\Jackv\source\repos\sfml-super-cool\Sfml2\Sfml2\Renderer.cpp(118,56): warning C4244:         [
+C:\Users\Jackv\source\repos\sfml-super-cool\Sfml2\Sfml2\Renderer.cpp(118,56): warning C4244:             T=float
+C:\Users\Jackv\source\repos\sfml-super-cool\Sfml2\Sfml2\Renderer.cpp(118,56): warning C4244:         ]
+  Sfml2.vcxproj -> C:\Users\Jackv\source\repos\sfml-super-cool\Sfml2\x64\Debug\Sfml2.exe
