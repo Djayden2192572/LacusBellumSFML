@@ -9,6 +9,9 @@ public:
     // If walls == nullptr, no wall-checking is performed.
     void update(float dt, const std::vector<sf::RectangleShape>* walls = nullptr);
     bool isAlive() const;
+    
+    void setColor(const sf::Color& color) { m_shape.setFillColor(color); }
+
 
 protected:
     void draw(sf::RenderTarget& target, sf::RenderStates states) const override;

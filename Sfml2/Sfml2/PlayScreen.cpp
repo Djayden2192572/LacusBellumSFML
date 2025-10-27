@@ -74,14 +74,6 @@ PlayScreen::PlayScreen(sf::Vector2u windowSize, int stageNumber) : stage(stageNu
 void PlayScreen::handleEvent(const sf::Event& event) {}
 
 void PlayScreen::update(float dt) {
-    
-
-    // First update characters so timers & existing projectiles advance
-    player.update(dt, &walls);
-    enemy.update(dt, &walls);
-    
-    
-    
     if (sf::Keyboard::isKeyPressed(sf::Keyboard::Escape)) {
         isPaused = !isPaused;
         sf::sleep(sf::milliseconds(200)); // debounce
@@ -96,7 +88,25 @@ void PlayScreen::update(float dt) {
         }
     }
 
-    if (isPaused) return; // skip movement, enemy logic, etc.
+   
+    if (isPaused) return; // stop everything while paused
+
+
+    // First update characters so timers & existing projectiles advance
+    player.update(dt, &walls);
+    enemy.updateAI(dt, player.getPosition());  // correct Enemy function
+    enemy.updateProjectiles(dt, walls);
+    
+    
+    
+   
+    
+    for (const auto& wall : walls) {
+        if (enemy.getGlobalBounds().intersects(wall.getGlobalBounds())) {
+            // reverse a bit to simulate bounce
+            enemy.undoMove();
+        }
+    }
 
 
 
@@ -104,7 +114,9 @@ void PlayScreen::update(float dt) {
     // Then process input/AI (they may spawn new projectiles that will be updated next frame)
     player.handleInput(dt, walls);
     enemy.updateAI(dt, player.getPosition());
+
 }
+
 
 void PlayScreen::draw(sf::RenderWindow& window) {
     window.draw(backgroundSprite);
