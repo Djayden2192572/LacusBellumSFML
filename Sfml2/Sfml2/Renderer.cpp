@@ -50,9 +50,9 @@ Renderer::Renderer(unsigned int width, unsigned int height, const std::string& t
 
     // Load game-over images (optional — fallback to text if missing)
     // Load game-over images the same way as MainMenu (file must be next to the exe / working dir)
-    gameOverWinLoaded = gameOverWinTexture.loadFromFile("goku.png");
+    gameOverWinLoaded = gameOverWinTexture.loadFromFile("Vicroyy.png");
     if (!gameOverWinLoaded) {
-        std::cerr << "Failed to load game over win image: goku.png\n";
+        std::cerr << "Failed to load game over win image: Vicroyy.png\n";
     }
     gameOverWinSprite.setTexture(gameOverWinTexture);
     gameOverWinSprite.setScale(
@@ -60,15 +60,22 @@ Renderer::Renderer(unsigned int width, unsigned int height, const std::string& t
         static_cast<float>(window.getSize().y) / gameOverWinTexture.getSize().y
     );
 
-    gameOverLoseLoaded = gameOverLoseTexture.loadFromFile("gameover_lose.png");
+    gameOverLoseLoaded = gameOverLoseTexture.loadFromFile("visitor.png");
     if (!gameOverLoseLoaded) {
-        std::cerr << "Failed to load game over lose image: gameover_lose.png\n";
+        std::cerr << "Failed to load game over lose image: visitor.png\n";
     }
     gameOverLoseSprite.setTexture(gameOverLoseTexture);
     gameOverLoseSprite.setScale(
         static_cast<float>(window.getSize().x) / gameOverLoseTexture.getSize().x,
         static_cast<float>(window.getSize().y) / gameOverLoseTexture.getSize().y
     );
+    if (!gameOverMusic.openFromFile("Assets/audio/gameover.wav")) {
+    std::cerr << "Failed to load game over music\n";
+}
+if (!victoryMusic.openFromFile("Assets/audio/victory.wav")) {
+    std::cerr << "Failed to load victory music\n";
+}
+
 }
 
 void Renderer::run() {
@@ -117,21 +124,23 @@ void Renderer::run() {
                 event.mouseButton.button == sf::Mouse::Left) {
                 sf::Vector2f mousePos(event.mouseButton.x, event.mouseButton.y);
                 if (restartText.getGlobalBounds().contains(mousePos)) {
-                    // Restart level
                     showGameOver = false;
                     inGame = true;
                     playScreen = std::make_unique<PlayScreen>(window.getSize(), 1);
-                    backgroundMusic.stop();
-                } else if (menuText.getGlobalBounds().contains(mousePos)) {
-                    // Return to main menu
+                    victoryMusic.stop();
+                    gameOverMusic.stop();
+                }
+                else if (menuText.getGlobalBounds().contains(mousePos)) {
                     showGameOver = false;
                     inGame = false;
                     isMainMenu = true;
                     mainMenu = std::make_unique<MainMenu>(window.getSize());
+                    victoryMusic.stop();
+                    gameOverMusic.stop();
                     backgroundMusic.play();
                 }
-                continue; // skip other event handling for this click
             }
+
 
             if (!inGame) {
                 if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Enter)
@@ -168,6 +177,12 @@ void Renderer::run() {
                 showGameOver = true;
                 playerWon = (result == PlayScreen::Result::EnemyDead); // enemy dead => player won
                 inGame = false; // drop out of gameplay updates; keep playScreen alive for drawing final frame
+                if (playerWon) {
+                    victoryMusic.play();
+                }
+                else {
+                    gameOverMusic.play();
+                }
             }
         }
 

@@ -10,7 +10,7 @@ Enemy::Enemy() {
     sf::FloatRect lb = m_sprite.getLocalBounds();
     m_sprite.setOrigin(lb.width * 0.5f, lb.height * 0.5f);
     m_sprite.setPosition(1650, 900);
-    m_speed = 15.f;
+    m_speed = 30.f;
 }
 
 void Enemy::updateAI(float dt, sf::Vector2f playerPos) {
@@ -37,7 +37,7 @@ void Enemy::updateAI(float dt, sf::Vector2f playerPos) {
 
     // Shoot
     if (shootTimer >= shootCooldown) {
-        shootTimer = -6.f;
+        shootTimer = -2.f;
         shoot(playerPos);
     }
 

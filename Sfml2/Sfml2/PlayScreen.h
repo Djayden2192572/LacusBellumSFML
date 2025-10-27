@@ -28,6 +28,7 @@ private:
     Enemy enemy;
     int stage;
 
+
     std::vector<sf::RectangleShape> walls;
 
     Result m_result = Result::None;
